@@ -120,3 +120,40 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.27);
   border-top: 1px solid rgba(255, 255, 255, 0.27);
 }
+@media (max-width: 480px) {
+  .caculator {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  .caculator .value {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+
+  .caculator button {
+  }
+}
+
+@media (max-width: 380px) {
+  .caculator {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 7px;
+    row-gap: 7px;
+  }
+
+  .caculator .value {
+    font-size: 1.8rem;
+    padding: 8px;
+  }
+
+  .caculator button {
+    height: 70px;
+    width: 70px;
+  }
+  .caculator button.equal {
+    height: 147px;
+  }
+}
+
